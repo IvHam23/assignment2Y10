@@ -1,0 +1,299 @@
+<html>
+
+    <head>
+        <title>Prototype</title>
+        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <i class="material-icons">add</i>
+
+        
+        
+        <script>
+            
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.fixed-action-btn');
+                var instances = M.FloatingActionButton.init(elems, options);
+            });
+
+            // Or with jQuery
+
+            $(document).ready(function(){
+                $('.fixed-action-btn').floatingActionButton();
+            });
+            
+              document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.fixed-action-btn');
+                var instances = M.FloatingActionButton.init(elems, {
+                  direction: 'left',
+                  hoverEnabled: false
+                });
+              });
+            
+        </script>
+        
+    </head>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Float four columns side by side */
+        .column {
+          float: left;
+          width: 20%;
+          padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {margin: 0 -5px;}
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+          }
+        }
+
+        /* Style the counter cards */
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          padding: 16px;
+          text-align: center;
+          background-color: #f1f1f1;
+        } 
+        
+        .nowrap {
+          white-space: nowrap ;
+        }
+        
+        .button {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          cursor: pointer;
+        }
+
+        .button1 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid green;
+        }
+
+        .button1:hover {
+          background-color: red;
+          color: white;
+        }
+
+        .button2 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid red;
+        }
+
+        .button2:hover {
+          background-color: green;
+          color: white;
+        }
+
+        .button3 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid green;
+        }
+
+        .button3:hover {
+          background-color: red;
+          color: white;
+        }
+
+        .button4 {
+          background-color: white;
+          color: black;
+          border: 2px solid red;
+        }
+
+        .button4:hover {background-color: green;}
+
+        .button5 {
+          background-color: white;
+          color: black;
+          border: 2px solid green;
+        }
+
+        .button5:hover {
+          background-color: red;
+          color: white;
+        }
+        
+        .button6 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid red;
+        }
+
+        .button6:hover {
+          background-color: green;
+          color: white;
+        }
+
+        .button7 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid green;
+        }
+
+        .button7:hover {
+          background-color: red;
+          color: white;
+        }
+
+        .button8 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid red;
+        }
+
+        .button8:hover {
+          background-color: green;
+          color: white;
+        }
+
+        .button9 {
+          background-color: white;
+          color: black;
+          border: 2px solid green;
+        }
+
+        .button9:hover {background-color: red;}
+
+        .button10 {
+          background-color: white;
+          color: black;
+          border: 2px solid red;
+        }
+
+        .button10:hover {
+          background-color: green;
+          color: white;
+        }
+        
+    </style>
+    
+    <body>
+        
+        <h1>
+          <center><span class="nowrap" style="color: green">Christmas</span>
+          <span class="nowrap" style="color: red">Gifts!</span></center>
+        </h1>
+        
+        <p align="right">Sign In</p>
+        <p align="right">Search</p>
+        
+        <hr>
+        <br>
+
+        <h2><u><center>Most Popular Items</center></u></h2>
+        
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h3>Item 1</h3>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3>Item 2</h3>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3>Card 3</h3>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3>Item 4</h3>
+                </div>
+            </div>
+        
+            <div class="column">
+                <div class="card">
+                    <h3>Item 5</h3>
+                </div>
+            </div>    
+        </div>
+        
+        <br>
+        
+        <h2><u><center>Categories</center></u></h2>
+        
+        <center>
+        <button class="button button1">Category 1</button>
+        <button class="button button2">Category 2</button>
+        <button class="button button3">Category 3</button>
+        <button class="button button4">Category 4</button>
+        <button class="button button5">Category 5</button>
+        </center>
+        <center>
+        <button class="button button1">Category 6</button>
+        <button class="button button2">Category 7</button>
+        <button class="button button3">Category 8</button>
+        <button class="button button4">Category 9</button>
+        <button class="button button5">Category 10</button>
+        </center>
+        
+        <br>
+        
+        <h2><u><center>Discussion Section</center></u></h2>
+        
+        <table>
+        
+            <tr>
+                <td>Comments...</td>
+            </tr>
+            
+        </table>
+
+        
+        <br>
+        <br>
+        
+        <div class="fixed-action-btn">
+          <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
+          </a>
+          <ul>
+            <li><a class="btn-floating red"><i class="material-icons">message</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">info</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">home</i></a></li>
+          </ul>
+        </div>
+        
+    </body>
+    
+</html>
